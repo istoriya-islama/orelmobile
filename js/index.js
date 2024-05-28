@@ -98,7 +98,7 @@ let datehtml = document.querySelector(".date")
 function date(){
     let date = new Date();
     let day = date.getDate();
-    let month = date.getMonth();
+    let month = date.getMonth() + 1;
     let year = date.getFullYear();
     if (month == "01" || month == "02"|| month == "03"
         || month == "04"|| month == "05" || month == "06"
