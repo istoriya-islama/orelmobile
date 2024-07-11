@@ -123,4 +123,20 @@ function date(){
 
 setInterval(date(), 86400)
 
+const timems = 10000; // ms
+const step = 1;
+
+function outNum(num, elem) {
+    let l = document.querySelector('#' + elem);
+    n = 0;
+    let t = Math.round(timems / (num / step));
+    let interval = setInterval(() => {
+        n = n + step;
+        if (n == num) {
+            clearInterval(interval);
+        }
+        l.innerHTML = n;
+    }, t);
+}
+outNum(100, 'ac');
 
