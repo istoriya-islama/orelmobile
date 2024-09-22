@@ -123,7 +123,7 @@ function date(){
 
 setInterval(date(), 86400)
 
-const timems = 10000; // ms
+const timems = 100000; // ms
 const step = 1;
 
 function outNum(num, elem) {
@@ -138,5 +138,5 @@ function outNum(num, elem) {
         l.innerHTML = n;
     }, t);
 }
-outNum(100, 'ac');
+outNum(1000, 'ac');
 
